@@ -2,7 +2,6 @@
 
 
 This Project is all About Simple Masking using Segment Anything Model (SAM) , Inpainting using Stable Diffusion and removing Anything.
-also includes a simple Gradio Web UI.
 
 I have used the following models:
 1. Segment Anything Model (SAM) : sam_vit_h_4b8939.pth (If GPU is 4GB or less use sam_vit_b_01ec64.pth)
