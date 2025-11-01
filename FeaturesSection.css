@@ -1,0 +1,68 @@
+.features-section {
+  position: relative;
+  background: radial-gradient(circle at 20% 20%, #0b132b, #000814 70%);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Subtle moving glow particles */
+.features-section::before,
+.features-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+  animation: floatGlow 12s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.features-section::before {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.35), transparent 70%);
+  top: -150px;
+  left: -100px;
+}
+
+.features-section::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(17, 50, 255, 0.35), transparent 70%);
+  bottom: -120px;
+  right: -80px;
+}
+
+/* Text gradient for section title */
+.text-gradient {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Feature cards */
+.feature-card {
+  background: rgba(15, 25, 40, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 150, 255, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.3);
+  border-color: rgba(0, 200, 255, 0.4);
+}
+
+/* Animations */
+@keyframes floatGlow {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(40px);
+  }
+}
