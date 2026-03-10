@@ -1,0 +1,8 @@
+flask
+flask_cors
+diffusers
+torch
+numpy
+Pillow
+segment_anything
+PyJWT
